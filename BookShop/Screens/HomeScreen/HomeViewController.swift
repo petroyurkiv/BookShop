@@ -11,6 +11,7 @@ final class HomeViewController: UIViewController {
     
     var viewModel: HomeViewModelProtocol
     var categories: [CellModel] = []
+    let tableView = UITableView(frame: .zero)
     
     init(viewModel: HomeViewModelProtocol) {
         self.viewModel = viewModel
@@ -23,12 +24,44 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Home"
         view.backgroundColor = .blue
         viewModel.onListUpdate = { [weak self] categories in
             print(categories)
             self?.categories = categories
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
         }
+        configureTableVeiw()
         viewModel.onLoad()
+    }
+    
+    private func configureTableVeiw() {
+        view.addSubview(tableView)
+        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.identifier)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.backgroundColor = .white
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
 }
 
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        categories.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as! HomeTableViewCell
+        let category = categories[indexPath.row]
+        cell.setupModel(category)
+        return cell
+    }
+}
