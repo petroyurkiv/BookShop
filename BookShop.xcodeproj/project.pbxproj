@@ -13,6 +13,10 @@
 		ABBC6EE62A56BBA8009D655C /* BookShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6EE42A56BBA8009D655C /* BookShop.xcdatamodeld */; };
 		ABBC6EE82A56BBAD009D655C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABBC6EE72A56BBAD009D655C /* Assets.xcassets */; };
 		ABBC6EEB2A56BBAD009D655C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBC6EE92A56BBAD009D655C /* LaunchScreen.storyboard */; };
+		ABBC6EF32A56BE5F009D655C /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6EF22A56BE5F009D655C /* NetworkSettings.swift */; };
+		ABBC6EF62A56C2C7009D655C /* CategoriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6EF52A56C2C7009D655C /* CategoriesManager.swift */; };
+		ABBC6EF82A56CEB9009D655C /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6EF72A56CEB9009D655C /* Categories.swift */; };
+		ABBC6EFA2A56D145009D655C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6EF92A56D145009D655C /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		ABBC6EE72A56BBAD009D655C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABBC6EEA2A56BBAD009D655C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABBC6EEC2A56BBAD009D655C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABBC6EF22A56BE5F009D655C /* NetworkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
+		ABBC6EF52A56C2C7009D655C /* CategoriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesManager.swift; sourceTree = "<group>"; };
+		ABBC6EF72A56CEB9009D655C /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		ABBC6EF92A56D145009D655C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,32 @@
 				ABBC6EDB2A56BBA8009D655C /* AppDelegate.swift */,
 				ABBC6EDD2A56BBA8009D655C /* SceneDelegate.swift */,
 				ABBC6EDF2A56BBA8009D655C /* ViewController.swift */,
+				ABBC6EFB2A56D186009D655C /* Models */,
+				ABBC6EF42A56BE64009D655C /* Helpers */,
 				ABBC6EE72A56BBAD009D655C /* Assets.xcassets */,
 				ABBC6EE92A56BBAD009D655C /* LaunchScreen.storyboard */,
 				ABBC6EEC2A56BBAD009D655C /* Info.plist */,
 				ABBC6EE42A56BBA8009D655C /* BookShop.xcdatamodeld */,
 			);
 			path = BookShop;
+			sourceTree = "<group>";
+		};
+		ABBC6EF42A56BE64009D655C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ABBC6EF22A56BE5F009D655C /* NetworkSettings.swift */,
+				ABBC6EF52A56C2C7009D655C /* CategoriesManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ABBC6EFB2A56D186009D655C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABBC6EF72A56CEB9009D655C /* Categories.swift */,
+				ABBC6EF92A56D145009D655C /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,10 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABBC6EF82A56CEB9009D655C /* Categories.swift in Sources */,
+				ABBC6EF32A56BE5F009D655C /* NetworkSettings.swift in Sources */,
+				ABBC6EF62A56C2C7009D655C /* CategoriesManager.swift in Sources */,
 				ABBC6EE02A56BBA8009D655C /* ViewController.swift in Sources */,
 				ABBC6EDC2A56BBA8009D655C /* AppDelegate.swift in Sources */,
 				ABBC6EE62A56BBA8009D655C /* BookShop.xcdatamodeld in Sources */,
 				ABBC6EDE2A56BBA8009D655C /* SceneDelegate.swift in Sources */,
+				ABBC6EFA2A56D145009D655C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
