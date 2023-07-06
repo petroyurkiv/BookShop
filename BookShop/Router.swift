@@ -16,6 +16,10 @@ final class Router {
     }
     
     func showHomeScreenAsRootController() {
-        navigationController?.setViewControllers([HomeViewController(viewModel: HomeViewModel())], animated: true)
+        navigationController?.setViewControllers([HomeScreenComposer.build(router: self)], animated: true)
+    }
+    
+    func showBooksScreen() {
+        navigationController?.pushViewController(BooksViewController(), animated: true)
     }
 }

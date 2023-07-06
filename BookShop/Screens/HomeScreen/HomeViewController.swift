@@ -9,11 +9,13 @@ import UIKit
 
 final class HomeViewController: UIViewController {
     
+    private var router: Router
     private var viewModel: HomeViewModelProtocol
     private var categories: [CellModel] = []
     private let tableView = UITableView(frame: .zero)
     
-    init(viewModel: HomeViewModelProtocol) {
+    init(viewModel: HomeViewModelProtocol, router: Router) {
+        self.router = router
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -56,6 +58,10 @@ final class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         categories.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        router.showBooksScreen()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
