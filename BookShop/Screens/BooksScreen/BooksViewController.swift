@@ -13,6 +13,9 @@ final class BooksViewController: UIViewController {
     
     override func viewDidLoad() {
         configureTableVeiw()
+        BooksManager.fetchData { books in
+            print(books)
+        }
     }
     
     private func configureTableVeiw() {

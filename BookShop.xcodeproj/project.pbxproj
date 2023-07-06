@@ -25,6 +25,10 @@
 		ABBC6F0A2A571475009D655C /* HomeScreenComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F092A571475009D655C /* HomeScreenComposer.swift */; };
 		ABBC6F0D2A5715F9009D655C /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F0C2A5715F9009D655C /* BooksViewController.swift */; };
 		ABBC6F0F2A57169F009D655C /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F0E2A57169F009D655C /* BooksTableViewCell.swift */; };
+		ABBC6F112A571A69009D655C /* BooksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F102A571A69009D655C /* BooksManager.swift */; };
+		ABBC6F142A571C57009D655C /* BooksResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F132A571C57009D655C /* BooksResult.swift */; };
+		ABBC6F162A572209009D655C /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F152A572209009D655C /* Books.swift */; };
+		ABBC6F182A572213009D655C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F172A572213009D655C /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		ABBC6F092A571475009D655C /* HomeScreenComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenComposer.swift; sourceTree = "<group>"; };
 		ABBC6F0C2A5715F9009D655C /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		ABBC6F0E2A57169F009D655C /* BooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCell.swift; sourceTree = "<group>"; };
+		ABBC6F102A571A69009D655C /* BooksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager.swift; sourceTree = "<group>"; };
+		ABBC6F132A571C57009D655C /* BooksResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksResult.swift; sourceTree = "<group>"; };
+		ABBC6F152A572209009D655C /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		ABBC6F172A572213009D655C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 			children = (
 				ABBC6EF22A56BE5F009D655C /* NetworkSettings.swift */,
 				ABBC6EF52A56C2C7009D655C /* CategoriesManager.swift */,
+				ABBC6F102A571A69009D655C /* BooksManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -106,6 +115,7 @@
 		ABBC6EFB2A56D186009D655C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ABBC6F122A571C41009D655C /* Books */,
 				ABBC6EFF2A56D925009D655C /* CellModel.swift */,
 				ABBC6EFE2A56D900009D655C /* Categories */,
 			);
@@ -149,6 +159,16 @@
 				ABBC6F0E2A57169F009D655C /* BooksTableViewCell.swift */,
 			);
 			path = BooksScreen;
+			sourceTree = "<group>";
+		};
+		ABBC6F122A571C41009D655C /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				ABBC6F132A571C57009D655C /* BooksResult.swift */,
+				ABBC6F152A572209009D655C /* Books.swift */,
+				ABBC6F172A572213009D655C /* Book.swift */,
+			);
+			path = Books;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +242,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABBC6EF82A56CEB9009D655C /* Categories.swift in Sources */,
+				ABBC6F162A572209009D655C /* Books.swift in Sources */,
 				ABBC6EFD2A56D8F4009D655C /* HomeViewModel.swift in Sources */,
+				ABBC6F112A571A69009D655C /* BooksManager.swift in Sources */,
 				ABBC6EF32A56BE5F009D655C /* NetworkSettings.swift in Sources */,
 				ABBC6F0A2A571475009D655C /* HomeScreenComposer.swift in Sources */,
 				ABBC6F0F2A57169F009D655C /* BooksTableViewCell.swift in Sources */,
+				ABBC6F142A571C57009D655C /* BooksResult.swift in Sources */,
+				ABBC6F182A572213009D655C /* Book.swift in Sources */,
 				ABBC6F002A56D925009D655C /* CellModel.swift in Sources */,
 				ABBC6F0D2A5715F9009D655C /* BooksViewController.swift in Sources */,
 				ABBC6EF62A56C2C7009D655C /* CategoriesManager.swift in Sources */,

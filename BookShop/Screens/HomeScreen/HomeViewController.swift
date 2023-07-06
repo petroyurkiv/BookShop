@@ -29,7 +29,6 @@ final class HomeViewController: UIViewController {
         title = "Home"
         view.backgroundColor = .blue
         viewModel.onListUpdate = { [weak self] categories in
-            print(categories)
             self?.categories = categories
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
