@@ -14,7 +14,7 @@ struct Category: Decodable {
     let oldestPublishedDate: String
     let newestPublishedDate: String
     let updated: String
-    
+
     private enum CodingKeys: String, CodingKey {
         case listName = "list_name"
         case displayName = "display_name"

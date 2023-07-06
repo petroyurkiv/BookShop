@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CategoriesManager {
+struct CategoriesManager {
     static func fetchData(completion: @escaping (Result<Categories, Error>) -> Void) {
         let url = URL(string: NetworkSettings.url + NetworkSettings.key)
         var request = URLRequest(url: url!)
@@ -20,7 +20,6 @@ enum CategoriesManager {
             
             do {
                 let result = try JSONDecoder().decode(Categories.self, from: data)
-                print(result)
                 completion(.success(result))
             } catch {
                 completion(.failure(error))
