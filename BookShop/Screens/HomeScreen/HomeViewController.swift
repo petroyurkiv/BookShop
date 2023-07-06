@@ -9,9 +9,9 @@ import UIKit
 
 final class HomeViewController: UIViewController {
     
-    var viewModel: HomeViewModelProtocol
-    var categories: [CellModel] = []
-    let tableView = UITableView(frame: .zero)
+    private var viewModel: HomeViewModelProtocol
+    private var categories: [CellModel] = []
+    private let tableView = UITableView(frame: .zero)
     
     init(viewModel: HomeViewModelProtocol) {
         self.viewModel = viewModel

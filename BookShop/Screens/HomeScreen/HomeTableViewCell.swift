@@ -7,12 +7,12 @@
 
 import UIKit
 
-class HomeTableViewCell: UITableViewCell {
+final class HomeTableViewCell: UITableViewCell {
     
     static let identifier = "HomeTableViewCell"
     
-    let name = UILabel()
-    let date = UILabel()
+    private let name = UILabel()
+    private let date = UILabel()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

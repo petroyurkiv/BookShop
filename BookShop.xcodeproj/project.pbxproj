@@ -21,6 +21,7 @@
 		ABBC6F002A56D925009D655C /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6EFF2A56D925009D655C /* CellModel.swift */; };
 		ABBC6F022A570142009D655C /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F012A570142009D655C /* HomeViewModelProtocol.swift */; };
 		ABBC6F062A57034C009D655C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F052A57034C009D655C /* HomeTableViewCell.swift */; };
+		ABBC6F082A5710C8009D655C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC6F072A5710C8009D655C /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		ABBC6EFF2A56D925009D655C /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		ABBC6F012A570142009D655C /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
 		ABBC6F052A57034C009D655C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		ABBC6F072A5710C8009D655C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				ABBC6EDB2A56BBA8009D655C /* AppDelegate.swift */,
 				ABBC6EDD2A56BBA8009D655C /* SceneDelegate.swift */,
+				ABBC6F072A5710C8009D655C /* Router.swift */,
 				ABBC6F032A570159009D655C /* Screens */,
 				ABBC6EF42A56BE64009D655C /* Helpers */,
 				ABBC6EFB2A56D186009D655C /* Models */,
@@ -213,6 +216,7 @@
 				ABBC6EE62A56BBA8009D655C /* BookShop.xcdatamodeld in Sources */,
 				ABBC6EDE2A56BBA8009D655C /* SceneDelegate.swift in Sources */,
 				ABBC6EFA2A56D145009D655C /* Category.swift in Sources */,
+				ABBC6F082A5710C8009D655C /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
